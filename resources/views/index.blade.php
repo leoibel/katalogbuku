@@ -8,7 +8,7 @@
 		  <hr class="my-4">
 		  <p>Jika ingin mengelola data buku, silakan klik Login</p>
 		  <p class="lead">
-		    <a class="btn btn-dark btn-lg" href="/login" role="button">Login</a>
+		    <a class="btn btn-dark btn-lg" href="{{ url('login') }}" role="button">Login</a>
 		  </p>
 		</div>
 	</div>

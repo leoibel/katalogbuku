@@ -5,7 +5,7 @@
 		<div class="card">
 			<div class="card-body">
 				<h3 class="card-title">Login</h3>
-				<form>
+				<form action="login" method="post">
 					@csrf()
 					<div class="form-group">
 						<label>username:</label>
@@ -13,7 +13,7 @@
 					</div>
 					<div class="form-group">
 						<label>password:</label>
-						<input type="text" name="password" class="form-control">
+						<input type="password" name="password" class="form-control">
 					</div>
 					<input type="submit" name="submit" value="Login" class="btn btn-dark">
 				</form>

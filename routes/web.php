@@ -24,6 +24,9 @@ Route::get('/login', function(){
 	return view('login');
 });
 
+Route::post('/login', 'LoginController@authenticate');
+
+
 Route::get('/aboutCon','IndexController@about');
 
 Route::get('contoh',function (){
@@ -33,6 +36,10 @@ Route::get('contoh',function (){
 Route::get('user/{id}',function ($id){
 	return 'User ' .$id;
 });
+
+Route::get('register','RegisterController@index');
+Route::post('register','RegisterController@store');
+
 
 
 
